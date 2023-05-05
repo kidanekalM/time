@@ -1,0 +1,36 @@
+.sun{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: orange;
+    background-image: radial-gradient(orange,gold);
+    box-shadow: 0px 0px 25px 10px gold;
+    position: absolute;
+    animation-name: moves;
+    animation-duration: 10s;
+    top: 0px;
+    left: 0px;
+    animation-iteration-count: infinite;
+}
+@keyframes moves {
+    from{}    
+    to{left: 100vw;}
+}
+.tree{
+    background-color: brown;
+    background-image: linear-gradient(90deg,rgb(143, 64, 64),brown,brown,rgb(143, 64, 64));
+    width: 10vw;
+    height: 50vh;
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+    animation-name: shad;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    /* box-shadow: -12px 18px 10px 1px black; */
+
+}
+@keyframes shad {
+    from{box-shadow: -52px 18px 10px 1px grey;}
+    to{box-shadow: 52px 18px 10px 1px grey;}
+}
