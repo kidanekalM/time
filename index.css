@@ -1,9 +1,13 @@
+body{
+    overflow:hidden;
+    background-color: grey;
+}
 .sun{
     height: 100px;
     width: 100px;
     border-radius: 50px;
     background-color: orange;
-    background-image: radial-gradient(orange,gold);
+    background-image: radial-gradient(white,gold);
     box-shadow: 0px 0px 25px 10px gold;
     position: absolute;
     animation-name: moves;
@@ -31,6 +35,6 @@
 
 }
 @keyframes shad {
-    from{box-shadow: -52px 18px 10px 1px grey;}
-    to{box-shadow: 52px 18px 10px 1px grey;}
+    from{box-shadow: 52px 18px 10px 1px grey;}
+    to{box-shadow: -52px 18px 10px 1px grey;}
 }
