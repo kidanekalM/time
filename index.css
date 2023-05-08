@@ -1,6 +1,7 @@
 body{
     overflow:hidden;
     background-color: grey;
+    display: flex;
 }
 .sun{
     height: 100px;
@@ -10,10 +11,10 @@ body{
     background-image: radial-gradient(white,gold);
     box-shadow: 0px 0px 25px 10px gold;
     position: absolute;
-    animation-name: moves;
-    animation-duration: 10s;
-    top: 0px;
-    left: 0px;
+    /* animation-name: moves; */
+    animation-duration: 1s;
+    top: 5vh;
+    left: -10vw;
     animation-iteration-count: infinite;
 }
 @keyframes moves {
@@ -26,7 +27,7 @@ body{
     width: 10vw;
     height: 50vh;
     position: absolute;
-    top: 40vh;
+    top: 60vh;
     left: 40vw;
     animation-name: shad;
     animation-iteration-count: infinite;
@@ -34,7 +35,62 @@ body{
     /* box-shadow: -12px 18px 10px 1px black; */
 
 }
-@keyframes shad {
-    from{box-shadow: 52px 18px 10px 1px grey;}
-    to{box-shadow: -52px 18px 10px 1px grey;}
+.leaves{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 400%;
+    height: 50%;
+    left: -10vw;
+    top:0vh;
+    border-radius: 100%;
+    /* overflow: hidden; */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10vh 10vh 0 0;
+    /* overflow:hidden; */
+
+
+}
+.leaf{
+    height: 3vh;
+    width: 3vh;
+    background-color: green;
+    box-shadow: 0px 1px 3px 0px;
+    border-radius: 50% 0;
+    animation-name: dryOut;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    /* position: absolute; */
+    /* top: 40vh; */
+}
+.leafWrap{
+    /* position: absolute; */
+    top:0vh;
+    /* animation-delay: 5s; */
+    /* animation-name: goDown; */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+/* @keyframes shad {
+    from{height: 2vh;
+        width: 2vw;
+    }
+    to{
+        width: 10vw;
+        height: 50vh;
+    }
+} */
+@keyframes dryOut {
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: rgb(124, 64, 64);
+    }
+}
+@keyframes goDown {
+    from{}
+    to{top:90vh;}
 }
